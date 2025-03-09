@@ -1,0 +1,21 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: ""
+    chapters:
+    - file: to-include
+  - caption: ✨ Projets / Portefolio
+    chapters:
+    - file: Projet/0-Analyse-formation/Analyse-form    
+    - file: Projet/1-Creation-module-e-learning/E-learning-Main
+      sections:
+      - file: Projet/1-Creation-module-e-learning/Organisation/Lancement
+      - file: Projet/1-Creation-module-e-learning/Livrables/Livrables-Main
+        sections:
+        - file: Projet/1-Creation-module-e-learning/Livrables/Experience-Utilisateur
+        - file: Projet/1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques
+    - file: Projet/2-Escape-Game/Escape-Game
+    - file: Projet/3-ENA/ENA   
