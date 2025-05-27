@@ -7,15 +7,29 @@ parts:
   - caption: ""
     chapters:
     - file: to-include
-  - caption: ✨ Projets / Portefolio
+  - caption: 🎓 Digital Learning
     chapters:
-    - file: Projet/0-Analyse-formation/Analyse-form    
-    - file: Projet/1-Creation-module-e-learning/E-learning-Main
+    - file: DLM/0-Analyse-formation/Analyse-form    
+    - file: DLM/1-Creation-module-e-learning/E-learning-Main
       sections:
-      - file: Projet/1-Creation-module-e-learning/Organisation/Lancement
-      - file: Projet/1-Creation-module-e-learning/Livrables/Livrables-Main
+      - file: DLM/1-Creation-module-e-learning/Organisation/Lancement
+      - file: DLM/1-Creation-module-e-learning/Livrables/Livrables-Main
         sections:
-        - file: Projet/1-Creation-module-e-learning/Livrables/Experience-Utilisateur
-        - file: Projet/1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques
-    - file: Projet/2-Escape-Game/Escape-Game
-    - file: Projet/3-ENA/ENA   
+        - file: DLM/1-Creation-module-e-learning/Livrables/Experience-Utilisateur
+        - file: DLM/1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques
+    - file: DLM/2-Escape-Game/Escape-Game
+    - file: DLM/3-ENA/ENA   
+    - file: DLM/4-Storyline/Storyline
+    - file: DLM/5-Video/Video-peda
+    - file: DLM/6-Classe-Virtuel/Classe-Virtuel
+    - file: DLM/Projet-Final/Projet-final
+  - caption: 🎨 CDUI
+    chapters:
+    - file: CDUI/GDP/GDP-main
+  - caption: ✨ Recherche
+    chapters:
+    - file: Recherche/Recherche-main
+  - caption: ✨ Outils
+    chapters:
+    - file: Outils/Outils-main
+    - file: Outils/Storyline/outil-storyline

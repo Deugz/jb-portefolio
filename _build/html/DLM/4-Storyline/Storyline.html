@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module Storyline &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=c1946012" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'DLM/4-Storyline/Storyline';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Vidéo Pédagogique" href="../5-Video/Video-peda.html" />
+    <link rel="prev" title="Environnement numérique d’apprentissage" href="../3-ENA/ENA.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Portfolio
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../to-include.html">To Do</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎓 Digital Learning</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../0-Analyse-formation/Analyse-form.html">Analyse / amélioration d’une formation</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../1-Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1-Creation-module-e-learning/Organisation/Lancement.html">Lancement / Organisation</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../1-Creation-module-e-learning/Livrables/Livrables-Main.html">Livrables</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../1-Creation-module-e-learning/Livrables/Experience-Utilisateur.html">Experience Utilisateur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques.html">Ingénieurie Pédagogique</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../2-Escape-Game/Escape-Game.html">Escape Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3-ENA/ENA.html">Environnement numérique d’apprentissage</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module Storyline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5-Video/Video-peda.html">Vidéo Pédagogique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6-Classe-Virtuel/Classe-Virtuel.html">Classe Virtuel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Projet-Final/Projet-final.html">Projet Final</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎨 CDUI</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../CDUI/GDP/GDP-main.html">Gestion de Projet</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">✨ Recherche</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Recherche/Recherche-main.html">Recherche</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">✨ Outils</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Outils/Outils-main.html">Panorama</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Outils/Storyline/outil-storyline.html">Storyline</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDLM/4-Storyline/Storyline.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/DLM/4-Storyline/Storyline.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Module Storyline</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apercu-du-projet">Aperçu du projet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-problematique">La problématique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-cible-les-utilisateurs">La cible / les utilisateurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#role-et-responsabilite-des-participants">Rôle et responsabilité des participants</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perimetre-et-contraintes">Périmètre et contraintes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-et-ce-que-vous-avez-realise">Processus et ce que vous avez réalisé</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les-resultats-et-ce-que-vous-avez-appris">Les résultats et ce que vous avez appris</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#module-complet">Module complet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experience-apprenante">Expérience Apprenante</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#storyboard">Storyboard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#module">Module</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amelioration-continue">Amélioration continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-add">To add</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="module-storyline">
+<h1>Module Storyline<a class="headerlink" href="#module-storyline" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="apercu-du-projet">
+<h2>Aperçu du projet<a class="headerlink" href="#apercu-du-projet" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>en une phrase</strong> : J’ai créé un module Storyline qui accompagne l’apprenant dans une exploration et une réflexion sur les différents Objectifs de Développement Durable</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>insérer une image de mock-up</p>
+</div>
+<ul class="simple">
+<li><p><strong>Que fait-il ?</strong> : (différents objectifs pédagogiques). Travail de recherche sur l’exploration non linéaire par l’apprenant</p></li>
+<li><p><strong>Qui en est le propriétaire / commanditaire</strong> : Le bahut était le commanditaire. En revanche, n’ayant pas reçu de cours sur la propriété intellectuelle et cette dernière n’ayant pas été clairement énoncé, j’ai décidé de garder la propriété intellectuelle de mon module.</p></li>
+<li><p><strong>À quoi ressemble-t-il ? (le commanditaire)</strong> :</p></li>
+<li><p><strong>Combien de temps a-t-il duré ?</strong> : Initialement censé être réalisé en une semaine, j’ai pris le parti de continuer ce module au-delà de ce temps (que je trouve trop court), et j’ai continué à travailler dessus pendant deux mois.</p></li>
+</ul>
+</section>
+<section id="la-problematique">
+<h2>La problématique<a class="headerlink" href="#la-problematique" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Expliquez la raison d’être du projet. Quel était le problème et les résultats attendus</strong> : Sensibiliser au développement durable et créer un module général que je pouvais lier aux différents domaines d’apprentissage que je souhaite aborder dans le futur ?</p></li>
+<li><p><strong>La problématique a-t-elle changé durant la réalisation du projet ?</strong> : Dès le début du projet, j’ai ajusté la problématique pour qu’elle englobe plus de compétences (que je possédais déjà), et que je souhaitais appliquer au domaine de l’apprentissage</p></li>
+<li><p><strong>Qui était impliqué dans l’identification du problème</strong></p></li>
+</ul>
+</section>
+<section id="la-cible-les-utilisateurs">
+<h2>La cible / les utilisateurs<a class="headerlink" href="#la-cible-les-utilisateurs" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Qui sont-ils ? Que font-ils ? D’où viennent-ils ? Comment les avez-vous identifiés ?</strong></p></li>
+<li><p><strong>Quelles recherches avez-vous réalisées pour mieux les connaître ? Quels ont été les premiers enseignements tirés de cette recherche ?</strong></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Parler de l’experience utilisateur, et de la recherche vis a vis des freins que chacun peut ressentir vis a vis d’une exploration libre</p>
+</div>
+</section>
+<section id="role-et-responsabilite-des-participants">
+<h2>Rôle et responsabilité des participants<a class="headerlink" href="#role-et-responsabilite-des-participants" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Quels rôles ont travaillé sur le projet</strong></p></li>
+<li><p><strong>Combien de personnes</strong></p></li>
+<li><p><strong>Distanciel / Présentiel</strong></p></li>
+<li><p><strong>Quel était votre rôle</strong></p></li>
+<li><p><strong>Comment avez-vous collaboré avec l’équipe</strong></p></li>
+<li><p><strong>Pendant combien de temps êtes-vous intervenu</strong></p></li>
+</ul>
+</section>
+<section id="perimetre-et-contraintes">
+<h2>Périmètre et contraintes<a class="headerlink" href="#perimetre-et-contraintes" title="Link to this heading">#</a></h2>
+<div class="admonition-mon-interpretation-de-la-consigne admonition">
+<p class="admonition-title">Mon interprétation de la consigne</p>
+<p>J’ai préféré adopté une approche créative pour pouvoir explorer un maximum de fonctions de ce nouvel outil que j’utilisais pour la première fois (de manière appliqué)</p>
+</div>
+<ul class="simple">
+<li><p><strong>Aviez-vous des budgets restreints ? Ou une date limite contraignante</strong> : Pas de budget (d’où la liberté créative prise en début de projet), et une deadline, mais trop courte vis-à-vis de mon ambition</p></li>
+<li><p><strong>Est-ce que certaines contraintes ont rendu le projet plus challengeant ? Des difficultés d’accès aux utilisateurs ? Aux données</strong> : Pas de temps donc le projet a été réalisé sur mon temps perso</p></li>
+<li><p><strong>Quelles étaient les particularités du projet ? Qu’avez-vous eu à adapter dans le processus pour réussir ?</strong></p></li>
+</ul>
+</section>
+<section id="processus-et-ce-que-vous-avez-realise">
+<h2>Processus et ce que vous avez réalisé<a class="headerlink" href="#processus-et-ce-que-vous-avez-realise" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Racontez comment votre équipe a réalisé le projet. Est-ce que vous avez fait vous, spécifiquement</strong></p></li>
+<li><p><strong>Quelles méthodes et outils avez-vous utilisé ?</strong></p></li>
+<li><p><strong>Investissement des parties prenantes</strong></p></li>
+<li><p><strong>Que s’est-il passé durant la réalisation du produit final ou du livrable</strong></p></li>
+</ul>
+</section>
+<section id="les-resultats-et-ce-que-vous-avez-appris">
+<h2>Les résultats et ce que vous avez appris<a class="headerlink" href="#les-resultats-et-ce-que-vous-avez-appris" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Que s’est-il passé après avoir terminé votre travail ? Le projet a-t-il été lancé ? À t’il été abandonné</strong></p></li>
+<li><p><strong>Qu’avez-vous appris ? Que pourriez-vous faire différemment dans un futur projet</strong></p></li>
+<li><p><strong>Avez-vous des résultats / données qui montrent que votre objectif est atteint</strong></p></li>
+<li><p><strong>Avez-vous des retours positifs ou négatifs des parties prenantes ou des utilisateurs</strong></p></li>
+</ul>
+<section id="module-complet">
+<h3>Module complet<a class="headerlink" href="#module-complet" title="Link to this heading">#</a></h3>
+<iframe src="https://3-a-alliance.github.io/Module-ODD/story.html" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+<ul class="simple">
+<li><p>J’ai appris que je préférais prendre le temps de faire les choses plutot que d’obéir</p></li>
+</ul>
+</section>
+<section id="experience-apprenante">
+<h3>Expérience Apprenante<a class="headerlink" href="#experience-apprenante" title="Link to this heading">#</a></h3>
+</section>
+<section id="storyboard">
+<h3>Storyboard<a class="headerlink" href="#storyboard" title="Link to this heading">#</a></h3>
+<iframe width="100%" height="600px" src="https://miro.com/app/live-embed/uXjVIX8kgJI=/?moveToViewport=-39097,-19492,83698,41195&embedId=368361249457" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<ul class="simple">
+<li><p><a class="reference external" href="https://miro.com/welcomeonboard/QlJreGtIdGQwSVdjNG83ZDcveTJhTWh4MG1rOGtRMnRsQzZaUEg4amgwclBFZXE2cTU1R1hURy90QzU3bFJHaE1xbjdiU0RGOWhiK3lrN1lFUFJrd1NIZDlseVI0b0JIYmRTc2w4N2Q2Ukc0UmFNK1NVbVl6bWFSa1dnaGNKTXN3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=436353897218">Storyboard</a></p></li>
+</ul>
+</section>
+<section id="module">
+<h3>Module<a class="headerlink" href="#module" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="amelioration-continue">
+<h2>Amélioration continue<a class="headerlink" href="#amelioration-continue" title="Link to this heading">#</a></h2>
+<section id="to-add">
+<h3>To add<a class="headerlink" href="#to-add" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://innerdevelopmentgoals.org/">Inner Developpement Goal</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./DLM\4-Storyline"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../3-ENA/ENA.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Environnement numérique d’apprentissage</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../5-Video/Video-peda.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Vidéo Pédagogique</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apercu-du-projet">Aperçu du projet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-problematique">La problématique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-cible-les-utilisateurs">La cible / les utilisateurs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#role-et-responsabilite-des-participants">Rôle et responsabilité des participants</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perimetre-et-contraintes">Périmètre et contraintes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-et-ce-que-vous-avez-realise">Processus et ce que vous avez réalisé</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les-resultats-et-ce-que-vous-avez-appris">Les résultats et ce que vous avez appris</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#module-complet">Module complet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experience-apprenante">Expérience Apprenante</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#storyboard">Storyboard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#module">Module</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amelioration-continue">Amélioration continue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#to-add">To add</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,806 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vidéo Pédagogique &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=c1946012" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'DLM/5-Video/Video-peda';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Classe Virtuel" href="../6-Classe-Virtuel/Classe-Virtuel.html" />
+    <link rel="prev" title="Module Storyline" href="../4-Storyline/Storyline.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Portfolio
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../to-include.html">To Do</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎓 Digital Learning</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../0-Analyse-formation/Analyse-form.html">Analyse / amélioration d’une formation</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../1-Creation-module-e-learning/E-learning-Main.html">Création d’un module e-learning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1-Creation-module-e-learning/Organisation/Lancement.html">Lancement / Organisation</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../1-Creation-module-e-learning/Livrables/Livrables-Main.html">Livrables</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../1-Creation-module-e-learning/Livrables/Experience-Utilisateur.html">Experience Utilisateur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1-Creation-module-e-learning/Livrables/Deroule-Pedagogiques.html">Ingénieurie Pédagogique</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../2-Escape-Game/Escape-Game.html">Escape Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3-ENA/ENA.html">Environnement numérique d’apprentissage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4-Storyline/Storyline.html">Module Storyline</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vidéo Pédagogique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6-Classe-Virtuel/Classe-Virtuel.html">Classe Virtuel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Projet-Final/Projet-final.html">Projet Final</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">🎨 CDUI</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../CDUI/GDP/GDP-main.html">Gestion de Projet</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">✨ Recherche</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Recherche/Recherche-main.html">Recherche</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">✨ Outils</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Outils/Outils-main.html">Panorama</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Outils/Storyline/outil-storyline.html">Storyline</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDLM/5-Video/Video-peda.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/DLM/5-Video/Video-peda.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vidéo Pédagogique</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-brief">Le Brief</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les-idees">Les Idées</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborations-possibles">Collaborations possibles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#alex">Alex</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#arthur">Arthur</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-idee-finale">L’idée finale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-theorie">La théorie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploration">Exploration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#travail-et-cognition">Travail et Cognition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeles-theoriques">Modèles théoriques</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-modele-est-evaluation-selection-traitement">Le Modèle EST (Évaluation, Sélection, Traitement)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-modele-isp-information-search-process">Le Modèle ISP (Information Search Process)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#les-trois-etapes-de-la-memoire">Les Trois Étapes de la Mémoire</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#encodage-l-acquisition-de-l-information">Encodage : L’acquisition de l’information</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#stockage-la-conservation-de-linformation">Stockage : La conservation de l’information</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#recuperation-lacces-a-linformation-stockee">Récupération : L’accès à l’information stockée</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#articles-scientifiques">Articles Scientifiques</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-cognitifs-et-conception">Processus Cognitifs et Conception</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions">Solutions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concepts-a-creuser">Concepts à creuser</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="video-pedagogique">
+<h1>Vidéo Pédagogique<a class="headerlink" href="#video-pedagogique" title="Link to this heading">#</a></h1>
+<section id="le-brief">
+<h2>Le Brief<a class="headerlink" href="#le-brief" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Beaucoup de liberté en ce qui concerne le sujet, ENFIN !!</p></li>
+</ul>
+<p>Je vais en profiter pour régler quelques comptes avec le Bahut ^^.</p>
+</section>
+<section id="les-idees">
+<h2>Les Idées<a class="headerlink" href="#les-idees" title="Link to this heading">#</a></h2>
+<p>Ma première idée m’oriente vers une vidéo pédagogique qui définit l’anarchie et ses différents courants (puisque ceci est en lien avec mon projet à long terme). Puis, un soir, de manière complétement impromptue, je rentre dans une transe créative ou je m’interroge sur <em>ma façon de recevoire et digérer l’information, en lien avec le monde professionel</em>, qui me pose des problèmes de manière quotidienne. Je le fais avec en tête, l’idée de faire une analogie avec la formation des planètes (un sujet que j’ai déjà exploré durant ma thèse). Je le fais ainsi car je me dis que cela pourrait faire un bon sujet récurrent a utiliser dans une stratégie web-marketing (via les réseaux sociaux). Quelque chose dans le style de :</p>
+<ul class="simple">
+<li><p>Explique moi un concept grâce à une analogie.</p></li>
+<li><p>Experience de pensée</p></li>
+<li><p>…</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Inclure ici une photo du schéma réalisé</p>
+</div>
+<section id="collaborations-possibles">
+<h3>Collaborations possibles<a class="headerlink" href="#collaborations-possibles" title="Link to this heading">#</a></h3>
+<section id="alex">
+<h4>Alex<a class="headerlink" href="#alex" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Graphiste</p></li>
+</ul>
+</section>
+<section id="arthur">
+<h4>Arthur<a class="headerlink" href="#arthur" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Producteur de musique</p></li>
+</ul>
+</section>
+</section>
+<section id="l-idee-finale">
+<h3>L’idée finale<a class="headerlink" href="#l-idee-finale" title="Link to this heading">#</a></h3>
+<p>Réaliser une vidéo en motion design, qui explique une experience de pensée dont le sujet est justement mon processus de pensée (expliqué par une analogie avec la vie, la mort et la formation des planètes), le tout sur une instrumentale réalisé par Arthur et par dessus un rap écrit et chanté par mes soins</p>
+</section>
+</section>
+<section id="la-theorie">
+<h2>La théorie<a class="headerlink" href="#la-theorie" title="Link to this heading">#</a></h2>
+<section id="exploration">
+<h3>Exploration<a class="headerlink" href="#exploration" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://chatgpt.com/c/67d4299f-f5a4-8013-999a-4b9f0232450a">Chat GPT</a></p></li>
+</ul>
+</section>
+<section id="travail-et-cognition">
+<h3>Travail et Cognition<a class="headerlink" href="#travail-et-cognition" title="Link to this heading">#</a></h3>
+<p>La conception des tâches en milieu professionnel a souvent été influencée par des approches traditionnelles telles que le taylorisme, qui privilégient la division du travail et la standardisation des processus. Cependant, ces méthodes peuvent négliger les processus cognitifs des travailleurs, entraînant une diminution de l’efficacité et une augmentation de la charge mentale. Le concept de « <strong>virus TFW</strong> » (taylorisme-fayolisme-weberisme), introduit par Henri Savall et Véronique Zardet, critique l’application obsolète de ces principes. Selon eux, ces approches génèrent inefficacité, inefficience et frustration au travail, car elles ne tiennent pas compte des mutations sociétales et des besoins cognitifs actuels des travailleurs.</p>
+<ul class="simple">
+<li><p><strong>Charge mentale</strong> : La charge mentale au travail est définie comme l’ensemble des sollicitations cognitives liées aux exigences professionnelles. Elle englobe les efforts de concentration, de compréhension et d’adaptation nécessaires à l’accomplissement des tâches. Ignorer ces aspects peut conduire à une surcharge cognitive, affectant la performance et le bien-être des employés.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Faire le paralèlle avec le monde éducatif, qui est étroitement lié avec le monde du travail !</p>
+</div>
+</section>
+<section id="modeles-theoriques">
+<h3>Modèles théoriques<a class="headerlink" href="#modeles-theoriques" title="Link to this heading">#</a></h3>
+<section id="le-modele-est-evaluation-selection-traitement">
+<h4>Le Modèle EST (Évaluation, Sélection, Traitement)<a class="headerlink" href="#le-modele-est-evaluation-selection-traitement" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Rouet et Tricot</p></li>
+</ul>
+<p>Ce modèle propose une approche en trois phases pour comprendre le traitement de l’information :</p>
+<ul class="simple">
+<li><p><strong>Évaluation</strong> : Le sujet analyse la tâche à accomplir, identifie les sources d’information disponibles et planifie sa stratégie de recherche.</p></li>
+<li><p><strong>Sélection</strong> : Parmi les sources identifiées, le sujet choisit celles qui semblent les plus pertinentes et explore les informations qu’elles contiennent.</p></li>
+<li><p><strong>Traitement</strong> : Le sujet analyse, comprend et intègre les informations sélectionnées, les reliant à ses connaissances antérieures pour les appliquer à la tâche en cours.</p></li>
+</ul>
+<p>Ce modèle met en évidence l’importance de la planification, du contrôle et de la régulation tout au long du processus de traitement de l’information.</p>
+</section>
+<section id="le-modele-isp-information-search-process">
+<h4>Le Modèle ISP (Information Search Process)<a class="headerlink" href="#le-modele-isp-information-search-process" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Kuhlthau</p></li>
+</ul>
+<p>Ce modèle décrit six phases successives dans la recherche et le traitement de l’information :</p>
+<ul class="simple">
+<li><p>Initiation : Prise de conscience d’un besoin d’information, souvent accompagnée d’incertitude.</p></li>
+<li><p>Sélection : Définition d’un sujet ou d’une direction générale pour la recherche.</p></li>
+<li><p>Exploration : Recherche préliminaire d’informations pour mieux comprendre le sujet, phase souvent marquée par la confusion.</p></li>
+<li><p>Formulation : Affinement du sujet de recherche à mesure que la compréhension s’améliore.</p></li>
+<li><p>Collecte : Rassemblement ciblé d’informations pertinentes.</p></li>
+<li><p>Présentation : Synthèse et application de l’information recueillie pour répondre au besoin initial.</p></li>
+</ul>
+<p>Ce modèle souligne les aspects cognitifs, affectifs et physiques impliqués dans chaque phase du processus de recherche d’information.</p>
+</section>
+<section id="les-trois-etapes-de-la-memoire">
+<h4>Les Trois Étapes de la Mémoire<a class="headerlink" href="#les-trois-etapes-de-la-memoire" title="Link to this heading">#</a></h4>
+<p>La psychologie cognitive identifie trois étapes clés dans le traitement de l’information :</p>
+<section id="encodage-l-acquisition-de-l-information">
+<h5>Encodage : L’acquisition de l’information<a class="headerlink" href="#encodage-l-acquisition-de-l-information" title="Link to this heading">#</a></h5>
+<p><strong>Types d’encodage</strong> :</p>
+<ul class="simple">
+<li><p>Encodage visuel : mémorisation d’images ou de formes.</p></li>
+<li><p>Encodage acoustique : mémorisation des sons, comme une mélodie ou une voix.</p></li>
+<li><p>Encodage sémantique : compréhension et association d’un sens à l’information (ex : retenir un concept en le reliant à des connaissances antérieures).
+<strong>Facteurs influençant l’encodage</strong> :</p></li>
+<li><p>L’attention (ex : une distraction peut altérer l’encodage).</p></li>
+<li><p>La motivation et l’émotion (ex : une information émotionnellement marquante est mieux encodée).</p></li>
+<li><p>La répétition et l’organisation (ex : regrouper les éléments en catégories facilite leur encodage).</p></li>
+</ul>
+</section>
+<section id="stockage-la-conservation-de-linformation">
+<h5>Stockage : La conservation de l’information<a class="headerlink" href="#stockage-la-conservation-de-linformation" title="Link to this heading">#</a></h5>
+<p>Une fois encodée, l’information est stockée dans la mémoire à différents niveaux :</p>
+<ul class="simple">
+<li><p>Mémoire sensorielle (ultra-courte durée) : stocke brièvement les informations perçues par les sens (visuelle : 0,5 sec ; auditive : 2-3 sec).</p></li>
+<li><p>Mémoire à court terme (ou mémoire de travail) : retient des informations pendant quelques secondes à minutes. Elle a une capacité limitée (7 ± 2 éléments selon Miller).</p></li>
+<li><p>Mémoire à long terme : permet une conservation durable de l’information.</p>
+<ul>
+<li><p>Mémoire déclarative (explicite) : faits et événements (ex : souvenirs d’enfance, connaissances générales).</p></li>
+<li><p>Mémoire procédurale (implicite) : automatismes et compétences (ex : savoir faire du vélo, taper au clavier).</p></li>
+</ul>
+</li>
+<li><p>Mécanismes du stockage :</p>
+<ul>
+<li><p>Consolidation : stabilisation des souvenirs dans la mémoire à long terme, influencée par le sommeil et la répétition.</p></li>
+<li><p>Plasticité synaptique : renforcement des connexions neuronales via l’apprentissage.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="recuperation-lacces-a-linformation-stockee">
+<h5>Récupération : L’accès à l’information stockée<a class="headerlink" href="#recuperation-lacces-a-linformation-stockee" title="Link to this heading">#</a></h5>
+<p>La récupération est le processus permettant de retrouver une information stockée pour l’utiliser dans une tâche ou une prise de décision.</p>
+<ul class="simple">
+<li><p>Types de récupération :</p>
+<ul>
+<li><p>Rappel libre : retrouver une information sans indice (ex : réciter une liste de mots de mémoire).</p></li>
+<li><p>Rappel indicé : retrouver une information grâce à un indice (ex : se souvenir d’un nom avec la première lettre).</p></li>
+<li><p>Reconnaissance : identifier une information parmi plusieurs (ex : test QCM).</p></li>
+</ul>
+</li>
+<li><p>Facteurs influençant la récupération :</p>
+<ul>
+<li><p>Le contexte (ex : retrouver un souvenir en retournant dans un lieu familier).</p></li>
+<li><p>L’état émotionnel (ex : mieux se souvenir d’un événement triste quand on est triste).</p></li>
+<li><p>L’interférence (ex : difficulté à se rappeler un ancien numéro de téléphone après en avoir appris un nouveau).</p></li>
+</ul>
+</li>
+</ul>
+<p>Ces étapes sont fondamentales pour comprendre comment l’information est traitée depuis sa réception jusqu’à son application.</p>
+</section>
+</section>
+<section id="articles-scientifiques">
+<h4>Articles Scientifiques<a class="headerlink" href="#articles-scientifiques" title="Link to this heading">#</a></h4>
+<p>L’un des articles scientifiques fondateurs de la théorie des trois étapes de la mémoire (Encodage, Stockage, Récupération) est celui d’Atkinson et Shiffrin (1968). Leur modèle, connu sous le nom de modèle modal de la mémoire, propose une distinction claire entre mémoire sensorielle, mémoire à court terme et mémoire à long terme.</p>
+<ul class="simple">
+<li><p>Référence clé : Atkinson, R. C., &amp; Shiffrin, R. M. (1968). Human memory: A proposed system and its control processes. In K. W. Spence &amp; J. T. Spence (Eds.), The Psychology of Learning and Motivation: Advances in Research and Theory (Vol. 2, pp. 89-195). Academic Press.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Récupérezr la source et mettre en lien les différents concepts avec le cours de Youri</p>
+</div>
+<p>Ce modèle a posé les bases des recherches ultérieures en cognition et neurosciences sur la mémoire humaine. Il a été complété et affiné par d’autres chercheurs comme Baddeley et Hitch (1974) avec leur modèle de la mémoire de travail.</p>
+</section>
+</section>
+<section id="processus-cognitifs-et-conception">
+<h3>Processus Cognitifs et Conception<a class="headerlink" href="#processus-cognitifs-et-conception" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dnarchi.fr/analyses/vers-une-approche-holistique-des-processus-cognitifs-de-conception-apport-des-neurosciences-pour-letude-de-la-conception/?utm_source=chatgpt.com">Vers une approche holistique des processus cognitifs de conception : apport des neurosciences pour l’étude de la conception
+</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Récupérer les sources et aussi l’image finale</p>
+</div>
+</section>
+<section id="solutions">
+<h3>Solutions<a class="headerlink" href="#solutions" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://recherche.iseor.com/pdf/articles_de_fond/2Article.pdf">La RSE, lien entre l’individu, l’organisation et la société : nouvel énoncé de la théorie socio-économique</a></p></li>
+<li><p><a class="reference external" href="https://sci-hub.box/10.1016/0142-694X(82)90040-0">Designerly way of knowing</a></p></li>
+</ul>
+</section>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A compléter</p>
+</div>
+<section id="concepts-a-creuser">
+<h3>Concepts à creuser<a class="headerlink" href="#concepts-a-creuser" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Virus TFW <a class="reference external" href="https://fr.wikipedia.org/wiki/Virus_TFW?utm_source=chatgpt.com">Wikipedia</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./DLM\5-Video"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../4-Storyline/Storyline.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Module Storyline</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../6-Classe-Virtuel/Classe-Virtuel.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Classe Virtuel</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#le-brief">Le Brief</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#les-idees">Les Idées</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#collaborations-possibles">Collaborations possibles</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#alex">Alex</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#arthur">Arthur</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-idee-finale">L’idée finale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-theorie">La théorie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploration">Exploration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#travail-et-cognition">Travail et Cognition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeles-theoriques">Modèles théoriques</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-modele-est-evaluation-selection-traitement">Le Modèle EST (Évaluation, Sélection, Traitement)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-modele-isp-information-search-process">Le Modèle ISP (Information Search Process)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#les-trois-etapes-de-la-memoire">Les Trois Étapes de la Mémoire</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#encodage-l-acquisition-de-l-information">Encodage : L’acquisition de l’information</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#stockage-la-conservation-de-linformation">Stockage : La conservation de l’information</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#recuperation-lacces-a-linformation-stockee">Récupération : L’accès à l’information stockée</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#articles-scientifiques">Articles Scientifiques</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processus-cognitifs-et-conception">Processus Cognitifs et Conception</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions">Solutions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concepts-a-creuser">Concepts à creuser</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

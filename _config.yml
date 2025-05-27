@@ -15,6 +15,16 @@ latex:
   latex_documents:
     targetname: book.tex
 
+sphinx:
+  extra_extensions:
+    - sphinx_tags
+  config:
+    tags_create_badges: true
+    tags_badge_colors:
+      tag1: primary
+      tag2: secondary
+      tag3: success
+
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
